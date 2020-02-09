@@ -9,5 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Run a one-line script
+    - name: Install packages via NPM
+      run: npm install
+    - name: Run webpack
       run: npx webpack
